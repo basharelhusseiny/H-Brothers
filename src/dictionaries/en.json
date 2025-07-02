@@ -1,0 +1,67 @@
+{
+  "navigation": {
+    "home": "Home",
+    "product": "Products",
+    "services": "Services",
+    "blog": "Blog",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "cta": "Explore Products",
+    "sectionTitle": "Why Choose HBrothers?",
+    "slides": [
+      {
+        "discount": "Who We Are",
+        "name": "H BROTHERS",
+        "description": "A private trading & investment company in essential consumer goods. We ensure supply chain excellence with global partnerships & integrity.",
+        "features": [
+          "Import, distribution & retail expertise",
+          "Reliable supply chain operations",
+          "Strategic global partnerships",
+          "Long-term social & economic impact"
+        ]
+      },
+      {
+        "discount": "Our Vision",
+        "name": "Respected & Reliable",
+        "description": "We strive to lead the region in supply, logistics, and service delivery with integrity and efficiency.",
+        "features": [
+          "Trusted supply and logistics partner",
+          "Driven by integrity and commitment",
+          "Efficient and scalable operations",
+          "Respected across the region"
+        ]
+      },
+      {
+        "discount": "Our Mission",
+        "name": "Affordable Goods for All",
+        "description": "Deliver high-quality essentials through strong supply chains and local empowerment with global partnerships.",
+        "features": [
+          "Affordable essential goods access",
+          "Community-centered approach",
+          "Support for underserved areas",
+          "Real social & economic impact"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Reliable Global Sourcing",
+        "description": "Strategic international partnerships to ensure supply quality"
+      },
+      {
+        "title": "Nationwide Distribution Network",
+        "description": "Fast, efficient delivery across all regions"
+      },
+      {
+        "title": "Community-Focused Values",
+        "description": "Empowering local communities and underserved areas"
+      },
+      {
+        "title": "Resilient Logistics",
+        "description": "Reliable infrastructure for uninterrupted operations"
+      }
+    ]
+  }
+}
