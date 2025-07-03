@@ -120,9 +120,8 @@ const TestimonialsSection = ({ dict }) => {
                       </div>
                       <div className="h-full flex justify-between flex-col mt-2">
                         <div>
-                          <p className="text-lg font-semibold">{item.name}</p>
-                          <p className="text-gray-700 text-sm">{item.role}</p>
-                          <p className="mt-3 text-[15px] tracking-wide text-gray-600 italic">
+                          <p className="text-xl font-semibold">{item.name}</p>
+                          <p className="mt-3 text-[15px] tracking-wide text-gray-700 italic font-medium">
                             {item.comment}
                           </p>
                         </div>

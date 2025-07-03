@@ -58,8 +58,8 @@ html {
   position: relative;
   bottom: 15px !important;
 }
-.testimonials.swiper-pagination-bullet-active {
-  background-color: rgb(133, 30, 17) !important;
+.testimonials-swiper .swiper-pagination-bullet-active {
+  background-color: #9f0712 !important;
 }
 .swiper-pagination-bullet {
   background-color: black !important;
