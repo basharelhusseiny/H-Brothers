@@ -63,5 +63,72 @@
         "description": "Reliable infrastructure for uninterrupted operations"
       }
     ]
-  }
+  },
+  "video": {
+    "title": "Watch Our Intro Video",
+    "description": "Discover our services and values in this short introduction video."
+  },
+  "aboutSection": {
+    "badge": "Who We Are",
+    "title": "About",
+    "highlight": "H BROTHERS",
+    "description": "H BROTHERS is a trusted company specializing in importing and distributing essential consumer goods. With strong international partnerships and a wide distribution network, we serve communities with integrity and reliability.",
+    "features": [
+      "Reliable Global Sourcing",
+      "Nationwide Distribution Network",
+      "Community-Focused Values",
+      "Resilient Logistics"
+    ]
+  },
+  "services": [
+    {
+      "id": 1,
+      "title": "International Imports",
+      "descOne": "We import a wide range of high-quality consumer goods from trusted global suppliers, including partners in the UAE, Turkey, Brazil, Malaysia, and Singapore.",
+      "descTwo": "Our import operations are supported by a strong international supply chain that ensures reliable and consistent product flow into South Sudan."
+    },
+    {
+      "id": 2,
+      "title": "Nationwide Distribution",
+      "descOne": "We operate an extensive distribution network across South Sudan, with regional warehouses and logistics teams serving both urban and remote areas.",
+      "descTwo": "Our infrastructure ensures that essential goods reach communities quickly, efficiently, and without interruption."
+    },
+    {
+      "id": 3,
+      "title": "Retail Outlets",
+      "descOne": "We bring our products directly to consumers through retail outlets such as the SKY LIMIT Tower store on Kator Road.",
+      "descTwo": "These locations are fully equipped to provide a convenient shopping experience and better market access to essential goods."
+    },
+    {
+      "id": 4,
+      "title": "Essential Product Supply",
+      "descOne": "We supply a broad selection of fast-moving and essential consumer goods, including:",
+      "descTwo": "Azam wheat flour, Sugar, rice, milk, juices, Vegetable cooking oil, Biscuits, candy, tomato paste, Lentils, soap, and more"
+    },
+    {
+      "id": 6,
+      "title": "Community Empowerment",
+      "descOne": "We believe in contributing beyond business.",
+      "descTwo": "Our company invests in: Local employment (especially youth & women), NGO partnerships, Strengthening local economies through training and development"
+    },
+    {
+      "id": 7,
+      "title": "Sustainable Practices",
+      "descOne": "We are committed to minimizing environmental impact through: ",
+      "descTwo": "Smarter packaging, Cleaner transport solutions, Promoting awareness about sustainability, We aim to build a future-ready, eco-conscious supply system."
+    }
+  ],
+  "sectionTitle": " Our Services",
+  "testimonialsTitle": "What Our Customers Say",
+  "testimonials": [
+    "I was impressed by their international imports. The product variety and quality from different countries are truly top-notch.",
+    "Their nationwide distribution is excellent. Even in remote areas, the delivery was fast and smooth.",
+    "I loved the retail outlet experience. The SKY LIMIT store is well-organized, and the staff were super helpful.",
+    "They always have essential goods in stock. I found everything I needed from food supplies to hygiene products.",
+    "Their investment in local communities really shows. I appreciate how they support youth and create job opportunities.",
+    "What I admire most is their commitment to sustainability. Their eco-friendly practices are something more companies should adopt.",
+    "From international imports to retail service, everything is well-managed. Truly a reliable company.",
+    "Excellent service and supply chain. I always receive my products on time and in perfect condition.",
+    "A company that does more than business – their social impact efforts really make a difference."
+  ]
 }

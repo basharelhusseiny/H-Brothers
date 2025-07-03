@@ -1,4 +1,8 @@
+import AboutSection from "@/components/HomePage/AboutSection";
 import HeroSection from "@/components/HomePage/HeroSection";
+import ServicesSection from "@/components/HomePage/ServicesSection";
+import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
+import VideoSection from "@/components/HomePage/VideoSection";
 import { getDictionary } from "@/dictionaries";
 
 export default async function Home({ params }) {
@@ -8,6 +12,10 @@ export default async function Home({ params }) {
   return (
     <main>
       <HeroSection dict={dict} />
+      <VideoSection dict={dict} />
+      <AboutSection dict={dict} />
+      <ServicesSection dict={dict} />
+      <TestimonialsSection dict={dict} />
     </main>
   );
 }
