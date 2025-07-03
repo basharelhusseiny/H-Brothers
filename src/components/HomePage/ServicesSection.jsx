@@ -31,7 +31,7 @@ const ServicesSection = ({ dict }) => {
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-xl font-bold text-sky-600 mb-3 group-hover:text-red-800 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-red-800 mb-3 group-hover:text-sky-600 transition-colors duration-300">
                 {service.title}
               </h3>
               <p className="text-gray-800 font-medium mb-2">

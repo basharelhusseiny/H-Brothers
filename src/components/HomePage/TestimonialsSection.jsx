@@ -106,7 +106,7 @@ const TestimonialsSection = ({ dict }) => {
                   <SwiperSlide className="overflow-visible">
                     <div
                       key={item.id}
-                      className="relative h-[250px] min-h-full text-center overflow-visible bg-gradient-to-tl from-white to-sky-100 p-5 pt-12 rounded-2xl mt-12"
+                      className="relative h-[250px] min-h-full text-center overflow-visible bg-gradient-to-tl from-white to-red-100 p-5 pt-12 rounded-2xl mt-12"
                     >
                       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                         <Image
@@ -115,7 +115,7 @@ const TestimonialsSection = ({ dict }) => {
                           alt={item.name}
                           width={70}
                           height={60}
-                          className="rounded-full border-4 outline-8 outline-white border-sky-800"
+                          className="rounded-full border-6 outline-8 outline-white border-red-800"
                         />
                       </div>
                       <div className="h-full flex justify-between flex-col mt-2">

@@ -37,7 +37,7 @@ const HeroSection = ({ dict }) => {
     },
     {
       id: 3,
-      image: "/images/hero/hero-3.png",
+      image: "/images/hero/hero-33.jpeg",
       discount: dict.hero.slides[2].discount,
       name: dict.hero.slides[2].name,
       description: dict.hero.slides[2].description,

@@ -52,7 +52,7 @@ const FeaturesSection = ({ serviceFeatures, dict }) => {
                 transition: { duration: 0.2 },
               }}
             >
-              <div className="mx-1.5 lg:mx-2 mt-0.5 icon-wrapper">
+              <div className="mx-2 lg:mx-2 mt-0.5 icon-wrapper">
                 <motion.div
                   initial={{ rotate: 0 }}
                   whileHover={{
@@ -64,10 +64,10 @@ const FeaturesSection = ({ serviceFeatures, dict }) => {
                 </motion.div>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 text-xs lg:text-sm">
+                <h3 className="font-semibold text-gray-800 mb-1">
                   {feature.title}
                 </h3>
-                <p className="text-[10px] lg:text-xs text-gray-600">
+                <p className="text-[10px] text-gray-600">
                   {feature.description}
                 </p>
               </div>
