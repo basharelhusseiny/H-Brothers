@@ -1,9 +1,11 @@
-import React from 'react'
+import { getDictionary } from "@/dictionaries";
+import ProductsClient from "@/components/productsPage/ProductsClient";
 
-const page = () => {
-  return (
-    <div>products</div>
-  )
-}
+const ProductsPage = async ({ params }) => {
+  const { locale } = await params;
+  const dict = await getDictionary(locale);
 
-export default page
+  return <ProductsClient dict={dict} locale={locale} />;
+};
+
+export default ProductsPage;

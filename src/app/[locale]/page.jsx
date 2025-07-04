@@ -14,7 +14,7 @@ export default async function Home({ params }) {
       <HeroSection dict={dict} />
       <VideoSection dict={dict} />
       <AboutSection dict={dict} />
-      <ServicesSection dict={dict} />
+      <ServicesSection dict={dict} header={dict.sectionTitle}/>
       <TestimonialsSection dict={dict} />
     </main>
   );

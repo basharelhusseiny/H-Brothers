@@ -30,7 +30,7 @@ export default async function RootLayout({ children, params }) {
         <MobileMenuProvider>
           <Header locale={locale} />
           <main className="flex-grow mt-[72px]">{children}</main>
-          <Footer />
+          <Footer locale={locale} />
           <FixedButtons />
         </MobileMenuProvider>
       </body>

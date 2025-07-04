@@ -1,17 +1,31 @@
+"use client";
+
 import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaYoutube,
   FaLinkedinIn,
-  FaApple,
-  FaGooglePlay,
 } from "react-icons/fa";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
-const Footer = () => {
+const Footer = ({ locale }) => {
+  const [dict, setDict] = useState(null);
+
+  useEffect(() => {
+    const loadLocale = async () => {
+      const translations = await import(`@/dictionaries/${locale}.json`);
+      setDict(translations);
+    };
+
+    loadLocale();
+  }, [locale]);
+
+  if (!dict) return null; // أو Spinner لو حابب
+
   return (
     <footer className="mt-14">
       <div className="bg-gray-900 text-gray-300 pt-12 pb-3">
@@ -25,126 +39,88 @@ const Footer = () => {
                   alt="H Brothers"
                   width={300}
                   height={40}
-                  className="mr-3"
+                  className="mx-3"
                 />
               </div>
               <p className="mb-6 text-gray-400 leading-relaxed">
-                H BROTHERS is a trusted company specializing in importing and
-                distributing essential consumer goods. With strong international
-                partnerships and a wide distribution network, we serve
-                communities with integrity and reliability.
+                {dict.footer.about}
               </p>
               <div className="flex space-x-3 mb-6">
-                <a
-                  href="/"
-                  className="bg-gray-800 hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
-                >
-                  <FaFacebookF />
-                </a>
-                <a
-                  href="/"
-                  className="bg-gray-800 hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href="#"
-                  className="bg-gray-800 hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="#"
-                  className="bg-gray-800 hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
-                >
-                  <FaYoutube />
-                </a>
-                <a
-                  href="#"
-                  className="bg-gray-800 hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
-                >
-                  <FaLinkedinIn />
-                </a>
+                {[
+                  FaFacebookF,
+                  FaTwitter,
+                  FaInstagram,
+                  FaYoutube,
+                  FaLinkedinIn,
+                ].map((Icon, i) => (
+                  <a
+                    key={i}
+                    href="#"
+                    className="bg-gray-800 hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
+                  >
+                    <Icon />
+                  </a>
+                ))}
               </div>
             </div>
 
             {/* Quick Links */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-gray-700">
-                Quick Links
+                {dict.footer.quickLinksTitle}
               </h3>
               <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/"
-                    className="hover:text-red-700 transition-colors duration-300 flex items-center"
-                  >
-                    <span className="mr-2">›</span> Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/product-category"
-                    className="hover:text-red-700 transition-colors duration-300 flex items-center"
-                  >
-                    <span className="mr-2">›</span> products
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services"
-                    className="hover:text-red-700 transition-colors duration-300 flex items-center"
-                  >
-                    <span className="mr-2">›</span> Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about"
-                    className="hover:text-red-700 transition-colors duration-300 flex items-center"
-                  >
-                    <span className="mr-2">›</span> About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="hover:text-red-700 transition-colors duration-300 flex items-center"
-                  >
-                    <span className="mr-2">›</span> Contact Us
-                  </Link>
-                </li>
+                {["home", "products", "services", "about", "contact"].map(
+                  (key) => (
+                    <li key={key}>
+                      <Link
+                        href={`/${key === "home" ? "" : key}`}
+                        className="hover:text-red-700 transition-colors duration-300 flex items-center"
+                      >
+                        <span className="mx-2">›</span>
+                        {dict.footer.links[key]}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
 
             {/* Contact Info */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-gray-700">
-                Contact Us
+                {dict.footer.contactTitle}
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <FiMapPin className="mt-1 mr-3 text-red-700" />
-                  <span>123 Tech Street, Digital City, 10001, USA</span>
+                  <FiMapPin className="mt-1 mx-3 text-red-700" />
+                  <span>{dict.footer.address}</span>
                 </li>
                 <li className="flex items-center">
-                  <FiPhone className="mr-3 text-red-700" />
-                  <span>+1 (800) 900-566</span>
+                  <a
+                    href="tel:+211921801700"
+                    className="flex items-center hover:text-red-700 transition-colors duration-300"
+                  >
+                    <FiPhone className="mx-3 text-red-700" />
+                    <span>{dict.footer.phone}</span>
+                  </a>
                 </li>
                 <li className="flex items-center">
-                  <FiMail className="mr-3 text-red-700" />
-                  <span>support@voltify.com</span>
+                  <a
+                    href="mailto:info@hbrothersinvestment.com"
+                    className="flex items-center hover:text-red-700 transition-colors duration-300"
+                  >
+                    <FiMail className="mx-3 text-red-700" />
+                    <span>{dict.footer.email}</span>
+                  </a>
                 </li>
               </ul>
-
               <div className="mt-6">
-                <h4 className="text-white font-medium mb-2">Business Hours</h4>
-                <p className="text-sm text-gray-400">
-                  Monday - Friday: 9:00 AM - 8:00 PM
-                  <br />
-                  Saturday: 10:00 AM - 6:00 PM
-                  <br />
-                  Sunday: Closed
+                <h4 className="text-white font-medium mb-2">
+                  {dict.footer.businessHours}
+                </h4>
+                <p className="text-sm text-gray-400 whitespace-pre-line">
+                  {dict.footer.hours}
                 </p>
               </div>
             </div>
@@ -155,7 +131,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-6 md:mb-0">
                 <h4 className="text-sm font-medium text-white mb-3">
-                  We Accept:
+                  {dict.footer.weAccept}
                 </h4>
                 <div className="flex space-x-3">
                   <Image
@@ -170,9 +146,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
                 <div>
-                  <span className="text-sm block">Secure Payments</span>
+                  <span className="text-sm block">
+                    {dict.footer.securePayments}
+                  </span>
                   <span className="text-xs text-gray-400">
-                    Protected by SSL
+                    {dict.footer.protectedBySSL}
                   </span>
                 </div>
               </div>
@@ -186,42 +164,25 @@ const Footer = () => {
         <div className="container mx-auto px-5">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-center md:text-left text-gray-400">
-              &copy; 2025 H Brothers. All rights reserved.
+              {dict.footer.copyright}
             </p>
             <div className="mt-3 md:mt-0">
               <ul className="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-gray-400">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-700 transition-colors duration-300"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-700 transition-colors duration-300"
-                  >
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-700 transition-colors duration-300"
-                  >
-                    Cookie Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-700 transition-colors duration-300"
-                  >
-                    Accessibility
-                  </a>
-                </li>
+                {[
+                  "privacyPolicy",
+                  "termsOfService",
+                  "cookiePolicy",
+                  "accessibility",
+                ].map((key) => (
+                  <li key={key}>
+                    <a
+                      href="#"
+                      className="hover:text-red-700 transition-colors duration-300"
+                    >
+                      {dict.footer[key]}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

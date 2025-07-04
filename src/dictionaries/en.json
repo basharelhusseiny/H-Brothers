@@ -130,5 +130,56 @@
     "From international imports to retail service, everything is well-managed. Truly a reliable company.",
     "Excellent service and supply chain. I always receive my products on time and in perfect condition.",
     "A company that does more than business – their social impact efforts really make a difference."
-  ]
+  ],
+  "footer": {
+    "about": "H BROTHERS is a trusted company specializing in importing and distributing essential consumer goods. With strong international partnerships and a wide distribution network, we serve communities with integrity and reliability.",
+    "quickLinksTitle": "Quick Links",
+    "contactTitle": "Contact Us",
+    "businessHours": "Business Hours",
+    "hours": "Monday - Saturday: 8:00 AM - 3:30 PM\nSunday: 8:00 AM - 1:30 PM",
+    "weAccept": "We Accept:",
+    "securePayments": "Secure Payments",
+    "protectedBySSL": "Protected by SSL",
+    "copyright": "© 2025 H Brothers. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "accessibility": "Accessibility",
+    "links": {
+      "home": "Home",
+      "products": "Products",
+      "services": "Services",
+      "about": "About Us",
+      "contact": "Contact Us"
+    },
+    "address": "Bor Road, Gumbo, Juba\nSouth Sudan",
+    "phone": "+211 921 801700",
+    "email": "info@hbrothersinvestment.com"
+  },
+  "productsPage": {
+    "products": "Products",
+    "home": "Home",
+    "all": "All Products",
+    "in_stock": "In Stock",
+    "out_of_stock": "Out of Stock",
+    "showing": "Showing",
+    "next": "N`ext",
+    "prev": "prev",
+    "categoryNames": {
+      "biscuits": "Biscuits",
+      "sugar": "Sugar",
+      "milk-powder": "Milk Powder",
+      "juice-powder": "Juice Powder",
+      "wheat-flour": "Wheat Flour",
+      "cooking-oil": "Cooking Oil",
+      "sweets": "Sweets",
+      "tomato-paste": "Tomato Paste",
+      "rice": "Rice",
+      "soft-drinks": "Soft Drinks"
+    }
+  },
+  "servicesPage": {
+    "services": "services",
+    "home": "Home"
+  }
 }

@@ -75,7 +75,7 @@ const TestimonialsSection = ({ dict }) => {
   return (
     <section>
       <section className="mt-16 mb-20">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-12 text-center drop-shadow-lg">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12 text-center drop-shadow-lg">
           {dict.testimonialsTitle}
         </h2>
         <div className="mt-5">
