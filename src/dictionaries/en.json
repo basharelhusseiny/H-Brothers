@@ -3,7 +3,7 @@
     "home": "Home",
     "product": "Products",
     "services": "Services",
-    "blog": "Blog",
+    "gallery": "gallery",
     "about": "About Us",
     "contact": "Contact Us"
   },
@@ -65,7 +65,7 @@
     ]
   },
   "video": {
-    "title": "Watch Our Intro Video",
+    "title": "Get to Know Us",
     "description": "Discover our services and values in this short introduction video."
   },
   "aboutSection": {
@@ -154,7 +154,7 @@
       "contact": "Contact Us"
     },
     "address": "Bor Road, Gumbo, Juba, South Sudan",
-    "phone": "+211 921 801700",
+    "phone": "+211 927 489786",
     "email": "info@hbrothersinvestment.com"
   },
   "productsPage": {
@@ -176,7 +176,8 @@
       "sweets": "Sweets",
       "tomato-paste": "Tomato Paste",
       "rice": "Rice",
-      "soft-drinks": "Soft Drinks"
+      "soft-drinks": "Soft Drinks",
+      "soap": "Soap"
     }
   },
   "servicesPage": {
@@ -237,5 +238,29 @@
         "label": "Tons of Goods Delivered Monthly"
       }
     ]
+  },
+  "contactPage": {
+    "title": "Send Us A Message",
+    "getTitle": "Get In Touch",
+    "subtitle": "Have a question or feedback? Fill out the form below and we'll get back to you as soon as possible.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "locationTitle": "Find Us On Map",
+    "info": {
+      "location": "Our Location",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "hours": "Business Hours",
+      "workingDays": "Monday - Saturday: 8:00 AM - 3:30 PM",
+      "sunday": "Sunday: 8:00 AM - 1:30 PM"
+    }
+  },
+  "galleryPage": {
+    "subtitle": "Explore Our Visual Journey"
   }
 }

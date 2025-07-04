@@ -6,7 +6,7 @@ const FixedButtons = () => {
     <div className="fixed bottom-5 left-5 flex flex-col gap-2 z-50">
       {/* زر واتساب */}
       <Link
-        href="https://api.whatsapp.com/send?phone=211921801700"
+        href="https://api.whatsapp.com/send?phone=211927489786"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
@@ -17,7 +17,7 @@ const FixedButtons = () => {
 
       {/* زر فيسبوك */}
       <Link
-        href=""
+        href="https://www.facebook.com/H.Brothers.coltd/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition"
@@ -28,7 +28,7 @@ const FixedButtons = () => {
 
       {/* زر الاتصال */}
       <Link
-        href="tel:211921801700"
+        href="tel:211927489786"
         className="bg-sky-600 text-white p-3 rounded-full shadow-lg hover:bg-sky-700 transition"
         aria-label="Call"
       >

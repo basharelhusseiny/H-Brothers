@@ -1,41 +1,23 @@
 const productsData = [
   {
-    slug: "biscuits",
+    slug: "soft-drinks",
     items: [
       {
         id: crypto.randomUUID(),
-        name: "Cream Biscuit 82gm",
-        image: "/images/products/biscuits/6SgQAUsQ.jpeg",
+        name: "7up Soda Can 300ml",
+        image: "/images/products/soft-drinks/7up.jpg",
         inStock: true,
       },
       {
         id: crypto.randomUUID(),
-        name: "Cream Biscuits 75gm",
-        image: "/images/products/biscuits/gJyuwW_A.jpeg",
+        name: "Pepsi Soda Can 300ml",
+        image: "/images/products/soft-drinks/pepsi.jpg",
         inStock: true,
       },
       {
         id: crypto.randomUUID(),
-        name: "Milk Plus Biscuit 55gm",
-        image: "/images/products/biscuits/AFMQ7LMA.jpeg",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Biscuit Glucose 110gm",
-        image: "/images/products/biscuits/TpX2qaQA.jpeg",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Biscuit Glucose 150gm",
-        image: "/images/products/biscuits/t7Ajdpuw.jpeg",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Biscuit Valentino 26gm",
-        image: "/images/products/biscuits/k00D_3jw.jpeg",
+        name: "Mirnda Soda Can 300ml",
+        image: "/images/products/soft-drinks/miranda.jpg",
         inStock: true,
       },
     ],
@@ -70,6 +52,59 @@ const productsData = [
     ],
   },
   {
+    slug: "biscuits",
+    items: [
+      {
+        id: crypto.randomUUID(),
+        name: "Cream Biscuit Pineapple 82gm",
+        image: "/images/products/biscuits/pinaple.jpg",
+        inStock: true,
+      },
+      {
+        id: crypto.randomUUID(),
+        name: "Cream Biscuits Orange 82gm",
+        image: "/images/products/biscuits/orange.jpg",
+        inStock: true,
+      },
+      {
+        id: crypto.randomUUID(),
+        name: "Cream Biscuits Chocolate 82gm",
+        image: "/images/products/biscuits/choco.jpg",
+        inStock: true,
+      },
+      {
+        id: crypto.randomUUID(),
+        name: "Cream Biscuits Strawberry 82gm",
+        image: "/images/products/biscuits/strabwra.jpg",
+        inStock: true,
+      },
+      {
+        id: crypto.randomUUID(),
+        name: "Milk Plus Biscuit 55gm",
+        image: "/images/products/biscuits/milkpluse.jpg",
+        inStock: true,
+      },
+      {
+        id: crypto.randomUUID(),
+        name: "Biscuit Glucose 110gm",
+        image: "/images/products/biscuits/baski.jpg",
+        inStock: true,
+      },
+      {
+        id: crypto.randomUUID(),
+        name: "Biscuit Glucose 150gm",
+        image: "/images/products/biscuits/t7Ajdpuw.jpeg",
+        inStock: true,
+      },
+      {
+        id: crypto.randomUUID(),
+        name: "Biscuit Valentino 26gm",
+        image: "/images/products/biscuits/k00D_3jw.jpeg",
+        inStock: true,
+      },
+    ],
+  },
+  {
     slug: "milk-powder",
     items: [
       {
@@ -78,12 +113,6 @@ const productsData = [
         image: "/images/products/milk-powder/-I6FeMFg.jpeg",
         inStock: true,
       },
-      // {
-      //   id: crypto.randomUUID(),
-      //   name: "Almudish Milk Powder 40gm",
-      //   image: "/images/products/milk-powder/-I6FeMFg.jpeg",
-      //   inStock: true,
-      // },
       {
         id: crypto.randomUUID(),
         name: "Almudish Milk Poweder Tin 2.5kg",
@@ -140,41 +169,6 @@ const productsData = [
     ],
   },
   {
-    slug: "wheat-flour",
-    items: [
-      {
-        id: crypto.randomUUID(),
-        name: "Azam Bora 25kg",
-        image: "/images/products/wheat-flour/IyJgN7qg.png",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Azam Bora 50kg",
-        image: "/images/products/wheat-flour/igOS5DBw.png",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Azam Carton",
-        image: "/images/products/wheat-flour/NMPyeOZQ.png",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Azam SBF 25kg",
-        image: "/images/products/wheat-flour/nfF-HuEQ.jpeg",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Azam SBF 50kg",
-        image: "/images/products/wheat-flour/nfF-HuEQ.jpeg",
-        inStock: true,
-      },
-    ],
-  },
-  {
     slug: "cooking-oil",
     items: [
       {
@@ -186,7 +180,7 @@ const productsData = [
       {
         id: crypto.randomUUID(),
         name: "Cooking Oil 3 Ltr",
-        image: "/images/products/cooking-oil/DHUp7ssw.png",
+        image: "/images/products/cooking-oil/oilcook.jpg",
         inStock: true,
       },
       {
@@ -212,6 +206,12 @@ const productsData = [
         image: "/images/products/sweets/64e5xkNA.jpeg",
         inStock: true,
       },
+      {
+        id: crypto.randomUUID(),
+        name: "Bubble Gum 5gm",
+        image: "/images/products/sweets/loli.jpg",
+        inStock: true,
+      },
     ],
   },
   {
@@ -220,7 +220,7 @@ const productsData = [
       {
         id: crypto.randomUUID(),
         name: "Almudish Tomato Paste 50gm",
-        image: "/images/products/tomato-paste/R_JrLNdg.png",
+        image: "/images/products/tomato-paste/royals.jpg",
         inStock: true,
       },
       {
@@ -257,24 +257,12 @@ const productsData = [
     ],
   },
   {
-    slug: "soft-drinks",
+    slug: "soap",
     items: [
       {
         id: crypto.randomUUID(),
-        name: "7up Soda Can 300ml",
-        image: "/images/products/soft-drinks/BbyZaUvw.jpeg",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Pepsi Soda Can 300ml",
-        image: "/images/products/soft-drinks/QbzFIUsQ.jpeg",
-        inStock: true,
-      },
-      {
-        id: crypto.randomUUID(),
-        name: "Mirnda Soda Can 300ml",
-        image: "/images/products/soft-drinks/LZUVT3HA.png",
+        name: "Bidco White Soap 600gm",
+        image: "/images/products/soap/soap.jpg",
         inStock: true,
       },
     ],

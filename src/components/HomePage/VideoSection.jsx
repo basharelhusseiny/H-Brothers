@@ -16,7 +16,6 @@ const VideoSection = ({ dict }) => {
           <iframe
             src="https://www.youtube.com/embed/Y9wyO10wUpU"
             title="YouTube video"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="w-full h-full"
