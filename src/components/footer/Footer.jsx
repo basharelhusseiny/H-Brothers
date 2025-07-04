@@ -27,17 +27,20 @@ const Footer = ({ locale }) => {
   if (!dict) return null; // أو Spinner لو حابب
 
   return (
-    <footer className="mt-14">
-      <div className="bg-gray-900 text-gray-300 pt-12 pb-3">
-        <div className="container mx-auto px-5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+    <footer>
+      <div className="relative bg-gradient-to-br from-[#101217] via-[#181c23] to-[#101217] text-gray-300 pt-14 pb-3 overflow-hidden">
+        {/* Decorative blurred circles */}
+        <div className="absolute -top-16 -left-16 w-60 h-60 bg-sky-700 opacity-20 rounded-full filter blur-2xl z-0" />
+        <div className="absolute -bottom-16 -right-16 w-72 h-72 bg-pink-900 opacity-20 rounded-full filter blur-2xl z-0" />
+        <div className="container mx-auto px-5 relative z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
             {/* Company Info */}
-            <div className="lg:col-span-2">
+            <div>
               <div className="mb-6 flex items-center">
                 <Image
-                  src="/images/logo-hbrothers.webp"
+                  src="/images/logo white.png"
                   alt="H Brothers"
-                  width={300}
+                  width={220}
                   height={40}
                   className="mx-3"
                 />
@@ -56,7 +59,7 @@ const Footer = ({ locale }) => {
                   <a
                     key={i}
                     href="#"
-                    className="bg-gray-800 hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
+                    className="bg-[#181c23] hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
                   >
                     <Icon />
                   </a>
@@ -98,7 +101,7 @@ const Footer = ({ locale }) => {
                 </li>
                 <li className="flex items-center">
                   <a
-                    href="tel:+211921801700"
+                    href={`tel:${dict.footer.phone.replace(/\s+/g, "")}`}
                     className="flex items-center hover:text-red-700 transition-colors duration-300"
                   >
                     <FiPhone className="mx-3 text-red-700" />
@@ -107,7 +110,7 @@ const Footer = ({ locale }) => {
                 </li>
                 <li className="flex items-center">
                   <a
-                    href="mailto:info@hbrothersinvestment.com"
+                    href={`mailto:${dict.footer.email}`}
                     className="flex items-center hover:text-red-700 transition-colors duration-300"
                   >
                     <FiMail className="mx-3 text-red-700" />
@@ -125,65 +128,37 @@ const Footer = ({ locale }) => {
               </div>
             </div>
           </div>
-
-          {/* Payment Methods */}
-          <div className="border-t border-gray-800 pt-5 pb-1">
+        </div>
+        {/* Copyright */}
+        <div className="bg-[#181c23] py-3 mt-8">
+          <div className="container mx-auto px-5">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="mb-6 md:mb-0">
-                <h4 className="text-sm font-medium text-white mb-3">
-                  {dict.footer.weAccept}
-                </h4>
-                <div className="flex space-x-3">
-                  <Image
-                    loading="lazy"
-                    src="/images/footer_img.png"
-                    alt="Apple Pay"
-                    width={200}
-                    height={30}
-                    className="bg-white rounded px-1"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
-                <div>
-                  <span className="text-sm block">
-                    {dict.footer.securePayments}
-                  </span>
-                  <span className="text-xs text-gray-400">
-                    {dict.footer.protectedBySSL}
-                  </span>
-                </div>
+              <p className="text-sm text-center md:text-left text-gray-400">
+                {dict.footer.copyright}
+              </p>
+              <div className="mt-3 md:mt-0">
+                <ul className="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-gray-400">
+                  {[
+                    "privacyPolicy",
+                    "termsOfService",
+                    "cookiePolicy",
+                    "accessibility",
+                  ].map((key) => (
+                    <li key={key}>
+                      <a
+                        href="#"
+                        className="hover:text-red-700 transition-colors duration-300"
+                      >
+                        {dict.footer[key]}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Copyright */}
-      <div className="bg-gray-950 py-3">
-        <div className="container mx-auto px-5">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-center md:text-left text-gray-400">
-              {dict.footer.copyright}
-            </p>
-            <div className="mt-3 md:mt-0">
-              <ul className="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-gray-400">
-                {[
-                  "privacyPolicy",
-                  "termsOfService",
-                  "cookiePolicy",
-                  "accessibility",
-                ].map((key) => (
-                  <li key={key}>
-                    <a
-                      href="#"
-                      className="hover:text-red-700 transition-colors duration-300"
-                    >
-                      {dict.footer[key]}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+            <div className="mt-2 text-center text-sm text-gray-500">
+              {dict.footer.powered}{" "}
+              <span className="font-semibold text-sky-400">HASH Solutions</span>
             </div>
           </div>
         </div>

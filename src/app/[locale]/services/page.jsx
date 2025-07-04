@@ -1,6 +1,7 @@
 import ServicesSection from "@/components/HomePage/ServicesSection";
 import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
 import { getDictionary } from "@/dictionaries";
+import CallToAction from "@/ui/CallToAction";
 import Link from "next/link";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
@@ -44,6 +45,7 @@ const page = async ({ params }) => {
           <ServicesSection dict={dict} />
         </div>
         <TestimonialsSection dict={dict} />
+        <CallToAction dict={dict} />
       </div>
     </div>
   );

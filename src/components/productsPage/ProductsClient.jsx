@@ -45,7 +45,7 @@ const ProductsClient = ({ dict, locale }) => {
       <div
         className="relative text-center py-10 uppercase"
         style={{
-          backgroundImage: "url('/images/services/DSC09917.webp')",
+          backgroundImage: "url('/images/services/DSC09889.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

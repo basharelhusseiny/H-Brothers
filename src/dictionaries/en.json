@@ -145,6 +145,7 @@
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "accessibility": "Accessibility",
+    "powered": "Powered by",
     "links": {
       "home": "Home",
       "products": "Products",
@@ -152,7 +153,7 @@
       "about": "About Us",
       "contact": "Contact Us"
     },
-    "address": "Bor Road, Gumbo, Juba\nSouth Sudan",
+    "address": "Bor Road, Gumbo, Juba, South Sudan",
     "phone": "+211 921 801700",
     "email": "info@hbrothersinvestment.com"
   },
@@ -163,7 +164,7 @@
     "in_stock": "In Stock",
     "out_of_stock": "Out of Stock",
     "showing": "Showing",
-    "next": "N`ext",
+    "next": "Next",
     "prev": "prev",
     "categoryNames": {
       "biscuits": "Biscuits",
@@ -181,5 +182,60 @@
   "servicesPage": {
     "services": "services",
     "home": "Home"
+  },
+  "callToAction": {
+    "heading": "Get in Touch — Let’s Grow Together",
+    "description": "Whether you’re a customer, partner, or organization looking to collaborate, our team is ready to connect.",
+    "contact": "Contact Us Today",
+    "explore": "Explore Products"
+  },
+  "aboutPage": {
+    "about": "About Us",
+    "ourValuesTitle": "Our Values",
+    "ourStoryTitle": "Our Story",
+    "ourStoryDescription1": "Since 2015, H Brothers has grown to become one of the largest food supply companies in South Sudan. With operations in over 80 counties, we ensure timely and reliable delivery of essential food products to every corner of the country.",
+    "ourStoryDescription2": "Our mission is to provide affordable, high-quality food while supporting the local economy and promoting sustainability. Backed by a strong logistics network and dedicated team, we continue to serve our clients with trust and efficiency.",
+    "highlights": [
+      "Reliable Global Sourcing",
+      "Nationwide Distribution Network",
+      "Community-Focused Values",
+      "Resilient Logistics"
+    ],
+    "companyValues": [
+      {
+        "title": "Quality & Reliability",
+        "description": "We ensure consistent supply of high-quality essential goods across South Sudan."
+      },
+      {
+        "title": "Community Empowerment",
+        "description": "We invest in local talent, support NGOs, and empower youth and women through employment and training."
+      },
+      {
+        "title": "Nationwide Distribution",
+        "description": "Our logistics network reaches every region, ensuring fast and efficient delivery without interruption."
+      },
+      {
+        "title": "Sustainability",
+        "description": "We adopt eco-friendly practices like smart packaging and cleaner transport to reduce environmental impact."
+      }
+    ],
+    "stats": [
+      {
+        "number": "10+",
+        "label": "Years of Experience"
+      },
+      {
+        "number": "80+",
+        "label": "Product Varieties"
+      },
+      {
+        "number": "10k+",
+        "label": "Trusted Global Suppliers"
+      },
+      {
+        "number": "1000+",
+        "label": "Tons of Goods Delivered Monthly"
+      }
+    ]
   }
 }

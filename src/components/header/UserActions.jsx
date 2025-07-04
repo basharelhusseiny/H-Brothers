@@ -57,12 +57,12 @@ const UserActions = ({ locale }) => {
   return (
     <div className="flex items-center space-x-4">
       {/* Book Now Button */}
-      <Link
+      {/* <Link
         href="/tours"
         className="hidden sm:block text-base text-white bg-gradient-to-l from-red-700 to-sky-600 hover:from-sky-600 hover:to-red-700 font-medium px-4 py-2 rounded-lg transition-colors duration-300"
       >
         {bookNowText}
-      </Link>
+      </Link> */}
 
       {/* Language Selector */}
       <div className="relative" ref={dropdownRef}>

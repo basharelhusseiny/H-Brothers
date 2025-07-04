@@ -1,4 +1,4 @@
-const VideoSection = ({dict}) => {
+const VideoSection = ({ dict }) => {
   return (
     <section className="relative mt-10 flex flex-col items-center justify-center bg-gradient-to-br from-white via-[#f5f7fa] to-white py-24 px-4 overflow-hidden">
       {/* Decorative blurred circles */}
@@ -6,7 +6,7 @@ const VideoSection = ({dict}) => {
       <div className="absolute -bottom-32 -right-32 w-[30rem] h-[30rem] bg-red-700 opacity-20 rounded-full filter blur-3xl z-0 animate-pulse" />
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center w-full max-w-3xl bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl border border-gray-200 p-8 md:p-12">
-        <h2 className="text-gray-900 text-3xl md:text-5xl font-extrabold mb-4 tracking-wide drop-shadow-lg text-center">
+        <h2 className="text-red-800 text-3xl md:text-5xl font-extrabold mb-4 tracking-wide drop-shadow-lg text-center">
           {dict.video.title}
         </h2>
         <p className="text-gray-700 text-lg md:text-xl mb-8 text-center max-w-2xl drop-shadow">

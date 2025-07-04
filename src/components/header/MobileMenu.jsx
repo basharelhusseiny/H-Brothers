@@ -91,7 +91,7 @@ const MobileMenu = ({ navLinks, locale }) => {
             ))}
           </div>
 
-          <div className="mt-14 mx-auto">
+          {/* <div className="mt-14 mx-auto">
             <Link
               href={`/${locale}/tours`}
               onClick={() => setIsMobMenuOpen(false)}
@@ -99,7 +99,7 @@ const MobileMenu = ({ navLinks, locale }) => {
             >
               Book Now
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

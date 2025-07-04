@@ -4,6 +4,7 @@ import ServicesSection from "@/components/HomePage/ServicesSection";
 import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
 import VideoSection from "@/components/HomePage/VideoSection";
 import { getDictionary } from "@/dictionaries";
+import CallToAction from "@/ui/CallToAction";
 
 export default async function Home({ params }) {
   const { locale } = await params;
@@ -14,8 +15,9 @@ export default async function Home({ params }) {
       <HeroSection dict={dict} />
       <VideoSection dict={dict} />
       <AboutSection dict={dict} />
-      <ServicesSection dict={dict} header={dict.sectionTitle}/>
+      <ServicesSection dict={dict} header={dict.sectionTitle} />
       <TestimonialsSection dict={dict} />
+      <CallToAction dict={dict} />
     </main>
   );
 }

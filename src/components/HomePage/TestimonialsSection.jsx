@@ -13,6 +13,8 @@ const TestimonialsSection = ({ dict }) => {
       image: "/images/users/user1.png",
       rating: 5,
       comment: dict.testimonials[0],
+      date: "05:42 PM",
+      day: "Jan 26, 2025",
     },
     {
       id: 2,
@@ -20,6 +22,8 @@ const TestimonialsSection = ({ dict }) => {
       image: "/images/users/user4.png",
       rating: 5,
       comment: dict.testimonials[1],
+      date: "07:15 AM",
+      day: "Feb 2, 2025",
     },
     {
       id: 3,
@@ -27,20 +31,26 @@ const TestimonialsSection = ({ dict }) => {
       image: "/images/users/user2.png",
       rating: 4,
       comment: dict.testimonials[2],
+      date: "03:02 PM",
+      day: "Apr 13, 2025",
     },
     {
       id: 4,
       name: "David Lee",
-      image: "/images/users/user3.png",
+      image: "/images/users/user4.png",
       rating: 5,
       comment: dict.testimonials[3],
+      date: "09:55 AM",
+      day: "Feb 23, 2025",
     },
     {
       id: 5,
       name: "Amina Yusuf",
-      image: "/images/users/user5.png",
+      image: "/images/users/user2.png",
       rating: 4,
       comment: dict.testimonials[4],
+      date: "01:34 PM",
+      day: "Jan 4, 2025",
     },
     {
       id: 6,
@@ -48,6 +58,8 @@ const TestimonialsSection = ({ dict }) => {
       image: "/images/users/user6.png",
       rating: 5,
       comment: dict.testimonials[5],
+      date: "10:15 AM",
+      day: "May 11, 2025",
     },
     {
       id: 7,
@@ -55,6 +67,8 @@ const TestimonialsSection = ({ dict }) => {
       image: "/images/users/user3.png",
       rating: 4,
       comment: dict.testimonials[6],
+      date: "8:40 PM",
+      day: "May 22, 2025",
     },
     {
       id: 8,
@@ -62,6 +76,8 @@ const TestimonialsSection = ({ dict }) => {
       image: "/images/users/user4.png",
       rating: 5,
       comment: dict.testimonials[7],
+      date: "03:57 AM",
+      day: "Jan 17, 2025",
     },
     {
       id: 9,
@@ -69,13 +85,15 @@ const TestimonialsSection = ({ dict }) => {
       image: "/images/users/user2.png",
       rating: 5,
       comment: dict.testimonials[8],
+      date: "10:12 PM",
+      day: "Jun 22, 2025",
     },
   ];
 
   return (
     <section>
       <section className="mt-16 mb-20">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12 text-center drop-shadow-lg">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-red-800 mb-12 text-center drop-shadow-lg">
           {dict.testimonialsTitle}
         </h2>
         <div className="mt-5">
@@ -92,7 +110,7 @@ const TestimonialsSection = ({ dict }) => {
                 clickable: true,
               }}
               autoplay={{
-                delay: 3000,
+                delay: 2000,
                 disableOnInteraction: false,
               }}
               breakpoints={{
@@ -126,8 +144,8 @@ const TestimonialsSection = ({ dict }) => {
                           </p>
                         </div>
                         <div className="flex items-center justify-between border-t-1 border-gray-400 mt-5 pt-2 text-sm text-gray-800">
-                          <p>Jan 20, 2025</p>
-                          <p className="text-gray-500">03:45 PM</p>
+                          <p>{item.day}</p>
+                          <p className="text-gray-500">{item.date}</p>
                         </div>
                       </div>
                     </div>
