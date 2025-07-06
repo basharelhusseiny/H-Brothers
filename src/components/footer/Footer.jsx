@@ -24,7 +24,7 @@ const Footer = ({ locale }) => {
     loadLocale();
   }, [locale]);
 
-  if (!dict) return null; // أو Spinner لو حابب
+  if (!dict) return null;
 
   return (
     <footer>
@@ -38,7 +38,7 @@ const Footer = ({ locale }) => {
             <div>
               <div className="mb-6 flex items-center">
                 <Image
-                  src="/images/logo white.png"
+                  src="/images/H BROTHERS' logo V2.png"
                   alt="H Brothers"
                   width={220}
                   height={40}
@@ -73,7 +73,7 @@ const Footer = ({ locale }) => {
                 {dict.footer.quickLinksTitle}
               </h3>
               <ul className="space-y-2">
-                {["home", "products", "services", "about", "contact"].map(
+                {["home", "products", "services","gallery", "about", "contact"].map(
                   (key) => (
                     <li key={key}>
                       <Link

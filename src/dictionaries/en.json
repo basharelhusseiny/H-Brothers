@@ -5,22 +5,37 @@
     "services": "Services",
     "gallery": "gallery",
     "about": "About Us",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "menu": "Menu"
+  },
+  "metadata": {
+    "home": {
+      "title": "HBrothers - Supplying Essential Goods with Integrity",
+      "description": "HBrothers is a trusted trading and investment company in essential consumer goods..."
+    }
+  },
+  "metadataAbout": {
+    "about": {
+      "title": "About Us - HBrothers",
+      "description": "Learn more about HBrothers, a trusted leader in the import and distribution of essential consumer goods."
+    }
   },
   "hero": {
     "cta": "Explore Products",
     "sectionTitle": "Why Choose HBrothers?",
+    "sectionDef": "Get to Know Us",
     "slides": [
       {
-        "discount": "Who We Are",
-        "name": "H BROTHERS",
+        "discount": "Our Expertise",
+        "name": "Trusted & Proven",
         "description": "A private trading & investment company in essential consumer goods. We ensure supply chain excellence with global partnerships & integrity.",
         "features": [
           "Import, distribution & retail expertise",
           "Reliable supply chain operations",
           "Strategic global partnerships",
           "Long-term social & economic impact"
-        ]
+        ],
+        "linkTitle": "Contact H BROTHERS"
       },
       {
         "discount": "Our Vision",
@@ -31,7 +46,8 @@
           "Driven by integrity and commitment",
           "Efficient and scalable operations",
           "Respected across the region"
-        ]
+        ],
+        "linkTitle": "Our Vision & Values"
       },
       {
         "discount": "Our Mission",
@@ -42,7 +58,8 @@
           "Community-centered approach",
           "Support for underserved areas",
           "Real social & economic impact"
-        ]
+        ],
+        "linkTitle": "Explore Products"
       }
     ],
     "features": [
@@ -150,6 +167,7 @@
       "home": "Home",
       "products": "Products",
       "services": "Services",
+      "gallery": "Gallery",
       "about": "About Us",
       "contact": "Contact Us"
     },

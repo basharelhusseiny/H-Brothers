@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutSection = ({ dict }) => {
   return (
     <section className="relative">
-      <div className="container mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-12 py-20 bg-gradient-to-br from-white via-[#f5f7fa] to-white overflow-hidden">
+      <div className="container mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-12 py-20 overflow-hidden">
         {/* Content */}
         <div className="relative z-10 flex-1 flex flex-col items-start">
           <span className="inline-block mb-5 px-4 py-1 rounded-full bg-sky-100 text-sky-700 font-semibold  shadow">

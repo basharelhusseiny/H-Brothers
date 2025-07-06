@@ -2,7 +2,6 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-// import FeaturesSection from "./FeaturesSide";
 import {
   FaGlobeAmericas,
   FaMapMarkedAlt,
@@ -13,35 +12,45 @@ import {
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Link from "next/link";
 import Image from "next/image";
 import FeaturesSection from "./FeaturesSide";
 
 const HeroSection = ({ dict }) => {
   const heroSectionSwiper = [
     {
+      id: 5,
+      image: "/images/gallery/ki09MOyg.jpeg",
+      name: dict.hero.slides[2].name,
+    },
+    {
       id: 1,
       image: "/images/hero/hero-1.png",
-      discount: dict.hero.slides[0].discount,
       name: dict.hero.slides[0].name,
-      description: dict.hero.slides[0].description,
-      features: dict.hero.slides[0].features,
     },
     {
       id: 2,
-      image: "/images/hero/hero-2.png",
-      discount: dict.hero.slides[1].discount,
+      image: "/images/gallery/r-XXmd_w.jpeg",
       name: dict.hero.slides[1].name,
-      description: dict.hero.slides[1].description,
-      features: dict.hero.slides[1].features,
     },
     {
       id: 3,
       image: "/images/hero/hero-33.jpeg",
-      discount: dict.hero.slides[2].discount,
       name: dict.hero.slides[2].name,
-      description: dict.hero.slides[2].description,
-      features: dict.hero.slides[2].features,
+    },
+    {
+      id: 4,
+      image: "/images/gallery/4Oh7Venw.jpeg",
+      name: dict.hero.slides[2].name,
+    },
+    {
+      id: 6,
+      image: "/images/gallery/vCbbW5Kg.jpeg",
+      name: dict.hero.slides[2].name,
+    },
+    {
+      id: 7,
+      image: "/images/gallery/RQ3vLbUQ.jpeg",
+      name: dict.hero.slides[2].name,
     },
   ];
 
@@ -91,40 +100,7 @@ const HeroSection = ({ dict }) => {
                       className="object-cover"
                       priority
                     />
-                    <div className="absolute inset-0 bg-black/40 flex items-center">
-                      <div className="text-white p-4 md:p-6 max-w-xl">
-                        <span className="inline-block bg-sky-600 text-white px-4 py-1 rounded-full text-xs md:text-sm font-medium mb-2 md:mb-3">
-                          {slide.discount}
-                        </span>
-                        <h2 className="text-xl md:text-3xl font-bold mb-1 md:mb-2">
-                          {slide.name}
-                        </h2>
-                        <p className="mb-2 md:mb-4 text-gray-100 font-semibold">
-                          {slide.description}
-                        </p>
-                        <ul className="mb-3 md:mb-4 space-y-0 md:space-y-1">
-                          {slide.features.map((feature, index) => (
-                            <li
-                              key={index}
-                              className="flex items-center text-sm"
-                            >
-                              <span className="mx-2 text-lg text-sky-500 font-bold">
-                                ✓
-                              </span>
-                              {feature}
-                            </li>
-                          ))}
-                        </ul>
-                        <div>
-                          <Link
-                            href="/shop"
-                            className="inline-flex items-center bg-sky-600 hover:bg-sky-600 text-white py-1.5 px-3 md:py-2 md:px-4 rounded-md text-sm transition-all duration-300"
-                          >
-                            {dict.hero.cta}
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
+                    {/* <div className="absolute inset-0 bg-black/40 flex items-center"></div> */}
                   </SwiperSlide>
                 );
               })}

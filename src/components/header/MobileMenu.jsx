@@ -2,13 +2,6 @@
 import { useMobileMenu } from "@/context/MobileMenuContext";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import {
-  FaHome,
-  FaPlane,
-  FaBlog,
-  FaInfoCircle,
-  FaEnvelope,
-} from "react-icons/fa";
 
 const MobileMenu = ({ navLinks, locale }) => {
   const { isMobMenuOpen, setIsMobMenuOpen } = useMobileMenu();
@@ -38,23 +31,6 @@ const MobileMenu = ({ navLinks, locale }) => {
     }
   }, [isMobMenuOpen]);
 
-  // const getIcon = (title) => {
-  //   switch (title.toLowerCase()) {
-  //     case "home":
-  //       return <FaHome className="mr-2" />;
-  //     case "tours":
-  //       return <FaPlane className="mr-2" />;
-  //     case "blog":
-  //       return <FaBlog className="mr-2" />;
-  //     case "about":
-  //       return <FaInfoCircle className="mr-2" />;
-  //     case "contact":
-  //       return <FaEnvelope className="mr-2" />;
-  //     default:
-  //       return null;
-  //   }
-  // };
-
   return (
     <div ref={menuRef}>
       <div
@@ -71,12 +47,12 @@ const MobileMenu = ({ navLinks, locale }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="p-6 flex flex-col h-full">
-          <div className="text-center mb-8 pt-4">
+          {/* <div className="text-center mb-8 pt-4">
             <h3 className="text-red-800 text-xl font-bold">Menu</h3>
             <div className="mt-2 h-1 w-16 bg-red-800 mx-auto rounded-full"></div>
-          </div>
+          </div> */}
 
-          <div className="flex flex-col space-y-5">
+          <div className="flex flex-col items-center mt-20 space-y-5">
             {navLinks.map((link) => (
               <div key={link.id} className="menu-item">
                 <Link
@@ -90,16 +66,6 @@ const MobileMenu = ({ navLinks, locale }) => {
               </div>
             ))}
           </div>
-
-          {/* <div className="mt-14 mx-auto">
-            <Link
-              href={`/${locale}/tours`}
-              onClick={() => setIsMobMenuOpen(false)}
-              className=" text-base text-white bg-gradient-to-l from-red-700 to-sky-600 hover:from-sky-600 hover:to-red-700 font-medium px-4 py-2 rounded-lg transition-colors duration-300"
-            >
-              Book Now
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>

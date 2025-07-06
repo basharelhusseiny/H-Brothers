@@ -5,22 +5,37 @@
     "services": "الخدمات",
     "gallery": "المعرض",
     "about": "نبذة عنا",
-    "contact": "اتصل بنا"
+    "contact": "اتصل بنا",
+    "menu": "القائمة"
+  },
+  "metadata": {
+    "home": {
+      "title": "HBrothers - Supplying Essential Goods with Integrity",
+      "description": "HBrothers is a trusted trading and investment company in essential consumer goods..."
+    }
+  },
+  "metadataAbout": {
+    "about": {
+      "title": "About Us - HBrothers",
+      "description": "Learn more about HBrothers, a trusted leader in the import and distribution of essential consumer goods."
+    }
   },
   "hero": {
     "cta": "تصفح المنتجات",
     "sectionTitle": "لماذا تختار إتش براذرز؟",
+    "sectionDef": "تعرف علينا",
     "slides": [
       {
-        "discount": "نبذة عنا",
-        "name": "إتش براذرز",
+        "discount": "خبرتنا",
+        "name": "موثوقة ومثبتة",
         "description": "شركة خاصة للتجارة والاستثمار متخصصة في السلع الاستهلاكية الأساسية، نضمن التميز في سلاسل الإمداد من خلال شراكات عالمية ونزاهة.",
         "features": [
           "خبرة في الاستيراد والتوزيع والتجزئة",
           "سلاسل إمداد موثوقة",
           "شراكات استراتيجية عالمية",
           "تأثير اجتماعي واقتصادي طويل الأمد"
-        ]
+        ],
+        "linkTitle": "تواصل مع إتش براذرز"
       },
       {
         "discount": "رؤيتنا",
@@ -31,7 +46,8 @@
           "مدفوعون بالنزاهة والالتزام",
           "عمليات فعالة وقابلة للتوسع",
           "سمعة مرموقة في المنطقة"
-        ]
+        ],
+        "linkTitle": "رؤيتنا وقيمنا"
       },
       {
         "discount": "مهمتنا",
@@ -42,7 +58,8 @@
           "نهج يركز على المجتمعات",
           "دعم المناطق المحرومة",
           "أثر اجتماعي واقتصادي حقيقي"
-        ]
+        ],
+        "linkTitle": "استكشاف المنتجات"
       }
     ],
     "features": [
@@ -150,6 +167,7 @@
       "home": "الرئيسية",
       "products": "المنتجات",
       "services": "الخدمات",
+      "gallery": "المعرض",
       "about": "نبذة عنا",
       "contact": "اتصل بنا"
     },

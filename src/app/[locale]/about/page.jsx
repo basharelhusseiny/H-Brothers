@@ -7,6 +7,44 @@ import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
 import CallToAction from "@/ui/CallToAction";
 import StatsSection from "@/ui/StatsSection";
 
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const dict = await getDictionary(locale);
+
+  return {
+    title: dict?.metadataAbout?.about?.title || "About Us - HBrothers",
+    description:
+      dict?.metadataAbout?.about?.description ||
+      "Learn more about HBrothers, a trusted leader in the import and distribution of essential consumer goods.",
+    alternates: {
+      canonical: `https://hbrothersinvestment.com/${locale}/about`,
+    },
+    openGraph: {
+      title: "About Us - HBrothers",
+      description:
+        "Discover the mission, vision, and story behind HBrothers and how we deliver essential goods with integrity.",
+      url: `https://hbrothersinvestment.com/${locale}/about`,
+      images: [
+        {
+          url: "https://hbrothersinvestment.com/og-about.jpg",
+          width: 1200,
+          height: 630,
+          alt: "About HBrothers",
+        },
+      ],
+      locale: locale === "ar" ? "ar_EG" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "About Us - HBrothers",
+      description:
+        "Discover the mission, vision, and story behind HBrothers and how we deliver essential goods with integrity.",
+      images: ["https://hbrothersinvestment.com/og-about.jpg"],
+    },
+  };
+}
+
 const AboutUs = async ({ params }) => {
   const { locale } = await params;
   const dict = await getDictionary(locale);
@@ -27,7 +65,7 @@ const AboutUs = async ({ params }) => {
       <div
         className="relative text-center py-10 uppercase z-19"
         style={{
-          backgroundImage: "url('/images/services/DSC09923.webp')",
+          backgroundImage: "url('/images/gallery/RQ3vLbUQ.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
