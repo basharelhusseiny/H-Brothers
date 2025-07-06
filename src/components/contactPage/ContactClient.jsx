@@ -64,9 +64,9 @@ const ContactClient = ({ dict, locale }) => {
       <div
         className="relative text-center py-10 uppercase z-19"
         style={{
-          backgroundImage: "url('/images/gallery/9pToLb_w.jpeg')",
+          backgroundImage: "url('/images/gallery/0atxcjiQ22.jpeg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
         }}
       >

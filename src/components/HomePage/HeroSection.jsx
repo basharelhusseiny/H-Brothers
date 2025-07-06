@@ -18,6 +18,16 @@ import FeaturesSection from "./FeaturesSide";
 const HeroSection = ({ dict }) => {
   const heroSectionSwiper = [
     {
+      id: 3,
+      image: "/images/hero/hero-33.jpeg",
+      name: dict.hero.slides[2].name,
+    },
+    {
+      id: 4,
+      image: "/images/gallery/4Oh7Venw.jpeg",
+      name: dict.hero.slides[2].name,
+    },
+    {
       id: 5,
       image: "/images/gallery/ki09MOyg.jpeg",
       name: dict.hero.slides[2].name,
@@ -31,16 +41,6 @@ const HeroSection = ({ dict }) => {
       id: 2,
       image: "/images/gallery/r-XXmd_w.jpeg",
       name: dict.hero.slides[1].name,
-    },
-    {
-      id: 3,
-      image: "/images/hero/hero-33.jpeg",
-      name: dict.hero.slides[2].name,
-    },
-    {
-      id: 4,
-      image: "/images/gallery/4Oh7Venw.jpeg",
-      name: dict.hero.slides[2].name,
     },
     {
       id: 6,
