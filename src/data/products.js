@@ -122,7 +122,7 @@ const productsData = [
       {
         id: crypto.randomUUID(),
         name: "Almudish Milk Poweder Tin 900gm",
-        image: "/images/products/milk-powder/lPEnr_9A.jpeg",
+        image: "/images/products/milk-powder/powder.jpg",
         inStock: true,
       },
       {
@@ -134,7 +134,7 @@ const productsData = [
       {
         id: crypto.randomUUID(),
         name: "Royal Milk Powder 40gm",
-        image: "/images/products/milk-powder/o_E_P-cw.png",
+        image: "/images/products/milk-powder/powdeeer.jpg",
         inStock: true,
       },
       {
@@ -179,13 +179,13 @@ const productsData = [
       },
       {
         id: crypto.randomUUID(),
-        name: "Cooking Oil 3 Ltr",
+        name: "Cooking Oil 5 Ltr",
         image: "/images/products/cooking-oil/oilcook.jpg",
         inStock: true,
       },
       {
         id: crypto.randomUUID(),
-        name: "Cooking Oil 5 Ltr",
+        name: "Cooking Oil 20 Ltr",
         image: "/images/products/cooking-oil/r4JFZivg.png",
         inStock: true,
       },
@@ -196,7 +196,7 @@ const productsData = [
     items: [
       {
         id: crypto.randomUUID(),
-        name: "Bubble Gum 3gm",
+        name: "Lollipop Big Bombo",
         image: "/images/products/sweets/9UCFFApA.jpeg",
         inStock: true,
       },
