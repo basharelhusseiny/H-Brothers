@@ -73,7 +73,7 @@ const Footer = ({ locale }) => {
                 {dict.footer.quickLinksTitle}
               </h3>
               <ul className="space-y-2">
-                {["home", "products", "services","gallery", "about", "contact"].map(
+                {["home", "products", "our goods","gallery", "about", "contact"].map(
                   (key) => (
                     <li key={key}>
                       <Link
