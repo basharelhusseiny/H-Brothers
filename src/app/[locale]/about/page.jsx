@@ -52,13 +52,6 @@ const AboutUs = async ({ params }) => {
 
   const companyValues = dict.aboutPage.companyValues;
 
-  const statsData = [
-    { number: "10+", label: dict.aboutPage.stats.years },
-    { number: "80+", label: dict.aboutPage.stats.varieties },
-    { number: "10k+", label: dict.aboutPage.stats.suppliers },
-    { number: "1000+", label: dict.aboutPage.stats.tons },
-  ];
-
   return (
     <div className="min-h-screen">
       {/* Header */}

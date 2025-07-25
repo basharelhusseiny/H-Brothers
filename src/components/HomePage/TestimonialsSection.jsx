@@ -9,8 +9,8 @@ const TestimonialsSection = ({ dict }) => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      image: "/images/users/user1.png",
+      name: "James Gatluak",
+      image: "/images/users/avater.webp",
       rating: 5,
       comment: dict.testimonials[0],
       date: "05:42 PM",
@@ -18,8 +18,8 @@ const TestimonialsSection = ({ dict }) => {
     },
     {
       id: 2,
-      name: "Michael Chen",
-      image: "/images/users/user4.png",
+      name: "Mary Akech",
+      image: "/images/users/avater.webp",
       rating: 5,
       comment: dict.testimonials[1],
       date: "07:15 AM",
@@ -27,8 +27,8 @@ const TestimonialsSection = ({ dict }) => {
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      image: "/images/users/user2.png",
+      name: "Peter Ladu",
+      image: "/images/users/avater.webp",
       rating: 4,
       comment: dict.testimonials[2],
       date: "03:02 PM",
@@ -36,8 +36,8 @@ const TestimonialsSection = ({ dict }) => {
     },
     {
       id: 4,
-      name: "David Lee",
-      image: "/images/users/user4.png",
+      name: "Nyamal Wek",
+      image: "/images/users/avater.webp",
       rating: 5,
       comment: dict.testimonials[3],
       date: "09:55 AM",
@@ -45,8 +45,8 @@ const TestimonialsSection = ({ dict }) => {
     },
     {
       id: 5,
-      name: "Amina Yusuf",
-      image: "/images/users/user2.png",
+      name: "John Mabior",
+      image: "/images/users/avater.webp",
       rating: 4,
       comment: dict.testimonials[4],
       date: "01:34 PM",
@@ -54,8 +54,8 @@ const TestimonialsSection = ({ dict }) => {
     },
     {
       id: 6,
-      name: "Carlos Martinez",
-      image: "/images/users/user6.png",
+      name: "Abuk Deng",
+      image: "/images/users/avater.webp",
       rating: 5,
       comment: dict.testimonials[5],
       date: "10:15 AM",
@@ -63,8 +63,8 @@ const TestimonialsSection = ({ dict }) => {
     },
     {
       id: 7,
-      name: "Linda Nguyen",
-      image: "/images/users/user3.png",
+      name: "Simon Kuol",
+      image: "/images/users/avater.webp",
       rating: 4,
       comment: dict.testimonials[6],
       date: "8:40 PM",
@@ -72,8 +72,8 @@ const TestimonialsSection = ({ dict }) => {
     },
     {
       id: 8,
-      name: "Omar Farouk",
-      image: "/images/users/user4.png",
+      name: "Agnes Nyandeng",
+      image: "/images/users/avater.webp",
       rating: 5,
       comment: dict.testimonials[7],
       date: "03:57 AM",
@@ -81,8 +81,8 @@ const TestimonialsSection = ({ dict }) => {
     },
     {
       id: 9,
-      name: "Julia Smith",
-      image: "/images/users/user2.png",
+      name: "Bol Ajang",
+      image: "/images/users/avater.webp",
       rating: 5,
       comment: dict.testimonials[8],
       date: "10:12 PM",
@@ -133,7 +133,7 @@ const TestimonialsSection = ({ dict }) => {
                           alt={item.name}
                           width={70}
                           height={60}
-                          className="rounded-full border-6 outline-8 outline-white border-red-800"
+                          className="rounded-full border-6 outline-8 outline-white border-gray-300"
                         />
                       </div>
                       <div className="h-full flex justify-between flex-col mt-2">

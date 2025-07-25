@@ -2,7 +2,7 @@
   "navigation": {
     "home": "Home",
     "product": "Products",
-    "services": "Services",
+    "goods": "Our Goods",
     "gallery": "gallery",
     "about": "About Us",
     "contact": "Contact Us",
@@ -212,7 +212,7 @@
     "about": "About Us",
     "ourValuesTitle": "Our Values",
     "ourStoryTitle": "Our Story",
-    "ourStoryDescription1": "Since 2015, H Brothers has grown to become one of the largest food supply companies in South Sudan. With operations in over 80 counties, we ensure timely and reliable delivery of essential food products to every corner of the country.",
+    "ourStoryDescription1": "Since 2015, H Brothers has grown to become one of the largest food supply companies in South Sudan. With operations in over 8 counties, we ensure timely and reliable delivery of essential food products to every corner of the country.",
     "ourStoryDescription2": "Our mission is to provide affordable, high-quality food while supporting the local economy and promoting sustainability. Backed by a strong logistics network and dedicated team, we continue to serve our clients with trust and efficiency.",
     "highlights": [
       "Reliable Global Sourcing",
@@ -248,7 +248,7 @@
         "label": "Product Varieties"
       },
       {
-        "number": "10k+",
+        "number": "8+",
         "label": "Trusted Global Suppliers"
       },
       {

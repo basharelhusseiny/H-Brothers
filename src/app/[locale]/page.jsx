@@ -75,7 +75,7 @@ export default async function Home({ params }) {
       <VideoSection dict={dict} />
       <AboutSection dict={dict} />
       <DefinitionSection dict={dict} />
-      <ServicesSection dict={dict} header={dict.sectionTitle} />
+      <ServicesSection dict={dict} header={dict.navigation.goods} />
       <TestimonialsSection dict={dict} />
       <CallToAction dict={dict} />
     </main>

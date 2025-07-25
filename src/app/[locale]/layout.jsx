@@ -1,5 +1,3 @@
-// app/[locale]/layout.jsx
-
 import { Cairo, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
@@ -7,7 +5,6 @@ import Footer from "@/components/footer/Footer";
 import MobileMenuProvider from "@/context/MobileMenuContext";
 import FixedButtons from "@/ui/FixedButtons";
 
-// تحميل الخطوط
 const roboto = Roboto({ subsets: ["latin"], display: "swap" });
 const cairo = Cairo({ subsets: ["arabic"], display: "swap" });
 

@@ -16,7 +16,7 @@ export default async function Header({ locale }) {
       title: navigation.product,
       href: "/product-category",
     },
-    { id: 3, title: navigation.services, href: "/services" },
+    { id: 3, title: navigation.goods, href: "/our-goods" },
     { id: 4, title: navigation.gallery, href: "/gallery" },
     { id: 5, title: navigation.about, href: "/about" },
     { id: 6, title: navigation.contact, href: "/contact" },

@@ -24,7 +24,7 @@ const page = async ({ params }) => {
         <div className="absolute inset-0 bg-black/50 z-0" />
         <div className="relative z-10">
           <h1 className="text-5xl max-sm:text-3xl font-light tracking-wider text-white">
-            {dict.servicesPage.services}
+            {dict.navigation.goods}
           </h1>
           <div className="flex items-center justify-center mt-4 max-sm:mt-3 text-xs space-x-1 text-white">
             <Link href="/" className="hover:text-red-800 duration-300">
@@ -35,7 +35,7 @@ const page = async ({ params }) => {
               href="/product-category"
               className="text-white hover:text-red-800 duration-300"
             >
-              {dict.servicesPage.services}
+              {dict.navigation.goods}
             </Link>
           </div>
         </div>
