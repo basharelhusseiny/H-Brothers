@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaYoutube,
   FaLinkedinIn,
+  FaTiktok,
 } from "react-icons/fa";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import Link from "next/link";
@@ -50,15 +51,24 @@ const Footer = ({ locale }) => {
               </p>
               <div className="flex space-x-3 mb-6">
                 {[
-                  FaFacebookF,
-                  FaTwitter,
-                  FaInstagram,
-                  FaYoutube,
-                  FaLinkedinIn,
-                ].map((Icon, i) => (
+                  {
+                    icon: FaFacebookF,
+                    link: "https://www.facebook.com/H.Brothers.coltd/",
+                  },
+                  {
+                    icon: FaInstagram,
+                    link: "https://www.instagram.com/hbrothersco?igsh=MWQxbzI3aTYwdGVhcQ==",
+                  },
+                  {
+                    icon: FaTiktok,
+                    link: "https://www.tiktok.com/@hbrothersco?_t=ZM-8yKrLByQQU9&_r=1",
+                  },
+                ].map(({ icon: Icon, link }, i) => (
                   <a
                     key={i}
-                    href="#"
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-[#181c23] hover:bg-red-700 text-white p-2.5 rounded-full transition-colors duration-300"
                   >
                     <Icon />
@@ -73,19 +83,24 @@ const Footer = ({ locale }) => {
                 {dict.footer.quickLinksTitle}
               </h3>
               <ul className="space-y-2">
-                {["home", "products", "our goods","gallery", "about", "contact"].map(
-                  (key) => (
-                    <li key={key}>
-                      <Link
-                        href={`/${key === "home" ? "" : key}`}
-                        className="hover:text-red-700 transition-colors duration-300 flex items-center"
-                      >
-                        <span className="mx-2">›</span>
-                        {dict.footer.links[key]}
-                      </Link>
-                    </li>
-                  )
-                )}
+                {[
+                  "home",
+                  "products",
+                  "services",
+                  "gallery",
+                  "about",
+                  "contact",
+                ].map((key) => (
+                  <li key={key}>
+                    <Link
+                      href={`/${key === "home" ? "" : key}`}
+                      className="hover:text-red-700 transition-colors duration-300 flex items-center"
+                    >
+                      <span className="mx-2">›</span>
+                      {dict.footer.links[key]}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
