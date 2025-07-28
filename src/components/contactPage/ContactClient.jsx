@@ -36,12 +36,15 @@ const ContactClient = ({ dict, locale }) => {
     {
       icon: <FaMapMarkerAlt className="text-2xl text-red-800" />,
       title: dict.contactPage.info.location,
-      details: ["Bor Road, Gumbo, Juba, South Sudan"],
+      details: [
+        "Bor Road, Gumbo, Juba, South Sudan",
+        "Kampala, Parliamentary Ave, Parliament Plaza",
+      ],
     },
     {
       icon: <FaPhoneAlt className="text-2xl text-red-800" />,
       title: dict.contactPage.info.phone,
-      details: ["+211 927 489786"],
+      details: ["+211 927 489786", "+256 764 282 664"],
     },
     {
       icon: <FaEnvelope className="text-2xl text-red-800" />,

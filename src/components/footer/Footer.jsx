@@ -114,6 +114,10 @@ const Footer = ({ locale }) => {
                   <FiMapPin className="mt-1 mx-3 text-red-700" />
                   <span>{dict.footer.address}</span>
                 </li>
+                <li className="flex items-start">
+                  <FiMapPin className="mt-1 mx-3 text-red-700" />
+                  <span>{dict.footer.addressTwo}</span>
+                </li>
                 <li className="flex items-center">
                   <a
                     href={`tel:${dict.footer.phone.replace(/\s+/g, "")}`}
@@ -121,6 +125,15 @@ const Footer = ({ locale }) => {
                   >
                     <FiPhone className="mx-3 text-red-700" />
                     <span>{dict.footer.phone}</span>
+                  </a>
+                </li>
+                <li className="flex items-center">
+                  <a
+                    href={`tel:${dict.footer.phone.replace(/\s+/g, "")}`}
+                    className="flex items-center hover:text-red-700 transition-colors duration-300"
+                  >
+                    <FiPhone className="mx-3 text-red-700" />
+                    <span>{dict.footer.phoneTwo}</span>
                   </a>
                 </li>
                 <li className="flex items-center">
