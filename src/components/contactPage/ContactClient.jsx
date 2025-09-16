@@ -44,7 +44,7 @@ const ContactClient = ({ dict, locale }) => {
     {
       icon: <FaPhoneAlt className="text-2xl text-red-800" />,
       title: dict.contactPage.info.phone,
-      details: ["+211 927 489786", "+256 764 282 664"],
+      details: ["+211 928 008858", "+256 764 282 664"],
     },
     {
       icon: <FaEnvelope className="text-2xl text-red-800" />,
